@@ -158,8 +158,8 @@ function IconContainer({
   });
 
   // Use the same transform range for both width and height
-  let sizeTransform = useTransform(distance, [0, 150], [200, 100]);
-  let sizeTransformIcon = useTransform(distance, [0, 150], [200, 100]);
+  let sizeTransform = useTransform(distance, [0, 150], [150, 100]);
+  let sizeTransformIcon = useTransform(distance, [0, 150], [150, 100]);
 
   let width = useSpring(sizeTransform, {
     mass: 0.1,
@@ -210,12 +210,12 @@ function IconContainer({
               exit={{ opacity: 0, y: 0, x: -10 }}          //{{ opacity: 0, y: 2, x: "-50%" }}
               style={{
                 position: 'absolute',
-                left: '13rem', // Distance from Icon
+                left: '10rem', // Distance from Icon
                 transform: 'translateX(-50%)', // Centers it horizontally
                 padding: '4px 8px',
                 whiteSpace: 'pre',
                 borderRadius: '0.375rem',
-                fontSize: '2.5rem',
+                fontSize: '2rem',
                 color: '#fff', // text-neutral-700
                 width: 'fit-content',
                 fontFamily: 'Roboto, sans-serif',
