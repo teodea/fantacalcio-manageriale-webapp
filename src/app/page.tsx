@@ -1,4 +1,3 @@
-//import Image from 'next/image';
 import { FloatingDock } from '../components/ui/floating-dock';
 import { RegolamentoIcon, LoginIcon, SquadreIcon, CompetizioneIcon, AlbodOroIcon } from '../components/icons';
 import '../styles/global.css';
@@ -13,7 +12,7 @@ export default function Home() {
             alignItems: 'center',
             flexDirection: 'row',
             position: 'relative',
-            backgroundImage: 'url("/menu-background.png")',
+            backgroundImage: 'url("/images/menu-background.png")',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center center',
             backgroundSize: 'cover',
@@ -25,25 +24,6 @@ export default function Home() {
                 position: 'relative',
                 overflow: 'hidden',
             }}>
-                {/*<div style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    <Image
-                        src="/logo-lega-scarponi.png"
-                        width={1000}
-                        height={1000}
-                        alt="Logo Lega Scarponi"
-                        layout="instrinsic"
-                        objectFit="cover"
-                    />
-                </div>*/}
             </div>
             <div style={{
                 flex: 2,
